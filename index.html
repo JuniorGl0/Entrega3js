@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Stylo.css" />
+    <title>Maquinaria AG|</title>
+  </head>
+  <body>
+    <header>
+      <h1>Maquinaria Agricola</h1>
+    </header>
+    <section class="contenedor">
+      <!-- Contenedor de elementos-->
+      <div class="contenedor-items">
+        <div class="item">
+          <span class="titulo-item">Serie 5015</span>
+          <img
+            src="img/tractor_5615.jpg"
+            alt="El tractor 5415 con su motor de 77 hp al motor y 67 a la toma de fuerza,
+             demuestra su poder en la tierra y lo hace con el más bajo consumo de combustible."
+            class="img-item"
+          />
+          <span class="precio-item">$70.000</span>
+          <button
+            class="boton-item"
+            onclick="agregarItemAlCarrito('Serie 5015', 70000, 'img/tractor_5615.jpg')"
+          >
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Serie 6J</span>
+          <img src="img/serie6j.webp" alt="" class="img-item" />
+          <span class="precio-item">$100.000</span>
+          <button
+            class="boton-item"
+            onclick="agregarItemAlCarrito('Serie 6J', 100000, 'img/serie6j.webp')"
+          >
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Serie 4</span>
+          <img src="img/tratorserie4.jpg" alt="" class="img-item" />
+          <span class="precio-item">$125.000</span>
+          <button
+            class="boton-item"
+            onclick="agregarItemAlCarrito('Serie 4', 125000, 'img/tratorserie4.jpg')"
+          >
+            Agregar al Carrito
+          </button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Serie 614</span>
+          <img src="img/tractor614.jpg" alt="" class="img-item" />
+          <span class="precio-item">$150.000</span>
+          <button
+            class="boton-item"
+            onclick="agregarItemAlCarrito('Serie 614', 150000, 'img/tractor614.jpg')"
+          >
+            Agregar al Carrito
+          </button>
+        </div>
+      </div>
+
+      <div class="carrito" id="carrito">
+        <div class="header-carrito">
+          <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items"></div>
+      </div>
+      <div class="carrito-items"></div>
+<div class="carrito-precio-total"></div>
+<button class="btn-pagar">Pagar</button>
+    </section>
+    <script src="entrega3.js" ></script>
+  </body>
+</html>
